@@ -43,12 +43,12 @@ public class ClimbingTheLeaderboard {
     for (int i = 0; i < m; i++) {
 
       int scoreToBeRanked = alice[i];
-      System.out.println(lastIndex);
       while (scores[lastIndex] < scoreToBeRanked) {
         lastIndex--;
         if (lastIndex == -1) {
           aliceRanks[i] = 1;
           flag = true;
+          break;
         }
       }
 
@@ -66,6 +66,8 @@ public class ClimbingTheLeaderboard {
       }
 
       aliceRanks[i] = ranks[lastIndex] + 1;
+
+
     }
 
     for (int aliceRank : aliceRanks) {
