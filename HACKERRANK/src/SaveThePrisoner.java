@@ -6,7 +6,7 @@ import java.util.regex.*;
 
 public class SaveThePrisoner {
 
-  static int saveThePrisoner(int n, int m, int s){
+  static int saveThePrisoner(int n, int m, int s) {
     // Complete this function
 
     if (m > n)
@@ -26,7 +26,7 @@ public class SaveThePrisoner {
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     int t = in.nextInt();
-    for(int a0 = 0; a0 < t; a0++){
+    for (int a0 = 0; a0 < t; a0++) {
       int n = in.nextInt();
       int m = in.nextInt();
       int s = in.nextInt();

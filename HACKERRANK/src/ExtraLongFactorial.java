@@ -4,8 +4,7 @@ import java.math.BigInteger;
 
 public class ExtraLongFactorial {
 
-  static BigInteger factorial(int N)
-  {
+  static BigInteger factorial(int N) {
     // Initialize result
     BigInteger f = new BigInteger("1");
 
