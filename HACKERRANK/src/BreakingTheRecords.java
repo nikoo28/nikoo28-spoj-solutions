@@ -1,12 +1,8 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class BreakingTheRecords {
 
-  static int[] getRecord(int[] s) {
+  private static int[] getRecord(int[] s) {
     // Complete this function
     int[] result = new int[2];
     result[0] = 0;

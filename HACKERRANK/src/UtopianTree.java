@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 public class UtopianTree {
@@ -7,7 +6,7 @@ public class UtopianTree {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
     Scanner in = new Scanner(System.in);
     int t = in.nextInt();
-    int height = 0;
+    int height;
     for (int a0 = 0; a0 < t; a0++) {
       int n = in.nextInt();
       if (n % 2 == 0)

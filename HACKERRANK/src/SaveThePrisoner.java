@@ -1,12 +1,8 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class SaveThePrisoner {
 
-  static int saveThePrisoner(int n, int m, int s) {
+  private static int saveThePrisoner(int n, int m, int s) {
     // Complete this function
 
     if (m > n)

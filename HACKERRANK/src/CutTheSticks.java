@@ -31,7 +31,7 @@ public class CutTheSticks {
         else
           sticks.set(i, sticks.get(i) - min);
       }
-      sticks.removeAll(Arrays.asList(0));
+      sticks.removeAll(Collections.singletonList(0));
     }
 
   }

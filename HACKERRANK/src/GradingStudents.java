@@ -1,12 +1,8 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class GradingStudents {
 
-  static int[] solve(int[] grades) {
+  private static int[] solve(int[] grades) {
     // Complete this function
 
     for (int i = 0; i < grades.length; i++) {

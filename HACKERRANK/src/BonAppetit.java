@@ -1,12 +1,8 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class BonAppetit {
 
-  static int bonAppetit(int n, int k, int b, int[] ar) {
+  private static int bonAppetit(int n, int k, int b, int[] ar) {
     // Complete this function
     int totalCost = 0;
     for (int i = 0; i < n; i++) {

@@ -1,12 +1,8 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class BirthdayCakeCandles {
 
-  static int birthdayCakeCandles(int n, int[] ar) {
+  private static int birthdayCakeCandles(int n, int[] ar) {
     // Complete this function
 
     int max = -1;

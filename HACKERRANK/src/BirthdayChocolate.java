@@ -1,12 +1,8 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class BirthdayChocolate {
 
-  static int solve(int n, int[] s, int d, int m) {
+  private static int solve(int n, int[] s, int d, int m) {
     // Complete this function
 
     int low = 0;

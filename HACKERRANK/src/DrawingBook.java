@@ -1,12 +1,8 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class DrawingBook {
 
-  static int solve(int n, int p) {
+  private static int solve(int n, int p) {
     // Complete this function
     int min = (n / 2) - (p / 2);
     if (min > p / 2)

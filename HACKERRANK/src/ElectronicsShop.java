@@ -1,10 +1,9 @@
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class ElectronicsShop {
 
-  static int getMoneySpent(int[] keyboards, int[] drives, int s) {
+  private static int getMoneySpent(int[] keyboards, int[] drives, int s) {
     // Complete this function
 
     Arrays.sort(keyboards);

@@ -1,12 +1,8 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class MigratoryBirds {
 
-  static int migratoryBirds(int n, int[] ar) {
+  private static int migratoryBirds(int n, int[] ar) {
     // Complete this function
 
     int[] count = new int[5];

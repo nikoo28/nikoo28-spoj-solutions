@@ -1,18 +1,14 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class BetweenTwoSets {
 
-  static int gcd(int a, int b) {
+  private static int gcd(int a, int b) {
     if (b == 0)
       return a;
     return gcd(b, a % b);
   }
 
-  static int getLCM(int[] a) {
+  private static int getLCM(int[] a) {
 
     if (a.length == 1)
       return a[0];
@@ -27,7 +23,7 @@ public class BetweenTwoSets {
     return lcm;
   }
 
-  static int getTotalX(int[] a, int[] b) {
+  private static int getTotalX(int[] a, int[] b) {
     // Complete this function
     int lcm = getLCM(a);
     int multiple = lcm;
@@ -48,8 +44,8 @@ public class BetweenTwoSets {
     List<Integer> finalSet = new ArrayList<>();
     for (int x : xList) {
       boolean isCandidate = true;
-      for (int i = 0; i < b.length; i++) {
-        if ((b[i] % x) != 0) {
+      for (int aB : b) {
+        if ((aB % x) != 0) {
           isCandidate = false;
           break;
         }

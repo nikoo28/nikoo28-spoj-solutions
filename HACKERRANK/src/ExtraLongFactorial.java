@@ -1,10 +1,9 @@
-import java.io.*;
 import java.util.*;
 import java.math.BigInteger;
 
 public class ExtraLongFactorial {
 
-  static BigInteger factorial(int N) {
+  private static BigInteger factorial(int N) {
     // Initialize result
     BigInteger f = new BigInteger("1");
 
