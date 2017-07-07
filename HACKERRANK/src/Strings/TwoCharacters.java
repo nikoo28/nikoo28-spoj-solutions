@@ -10,19 +10,20 @@ public class TwoCharacters {
   public static final int NUM_LETTERS = 26;
 
   public static void main(String[] args) {
-        /* Save input */
+
+    /* Save input */
     Scanner scan = new Scanner(System.in);
     int length = scan.nextInt();
     String str = scan.next();
     scan.close();
 
-        /* Edge case */
+    /* Edge case */
     if (length <= 1) {
       System.out.println(0);
       return;
     }
 
-        /* Create arrays representing the 26^2 subproblems */
+    /* Create arrays representing the 26^2 subproblems */
     int[][] pair = new int[NUM_LETTERS][NUM_LETTERS];
     int[][] count = new int[NUM_LETTERS][NUM_LETTERS];
 
@@ -30,7 +31,7 @@ public class TwoCharacters {
       char letter = str.charAt(i);
       int letterNum = letter - 'a';
 
-            /* Update row */
+      /* Update row */
       for (int col = 0; col < NUM_LETTERS; col++) {
         if (pair[letterNum][col] == letter) {
           count[letterNum][col] = -1;
@@ -41,7 +42,7 @@ public class TwoCharacters {
         }
       }
 
-            /* Update column */
+      /* Update column */
       for (int row = 0; row < NUM_LETTERS; row++) {
         if (pair[row][letterNum] == letter) {
           count[row][letterNum] = -1;
@@ -53,7 +54,7 @@ public class TwoCharacters {
       }
     }
 
-        /* Find max in "count" array */
+    /* Find max in "count" array */
     int max = 0;
     for (int row = 0; row < NUM_LETTERS; row++) {
       for (int col = 0; col < NUM_LETTERS; col++) {
