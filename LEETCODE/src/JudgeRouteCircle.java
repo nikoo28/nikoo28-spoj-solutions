@@ -5,11 +5,8 @@ public class JudgeRouteCircle {
 
   public boolean judgeCircle(String moves) {
 
-    Set<String> locations = new HashSet<>();
     int x = 0;
     int y = 0;
-
-    locations.add("0,0");
 
     for (int i = 0; i < moves.length(); i++) {
 
@@ -31,15 +28,11 @@ public class JudgeRouteCircle {
           x++;
           break;
       }
-
-      String move = Integer.toString(x) + "," + Integer.toString(y);
-      if (locations.contains(move))
-        return true;
-      else
-        locations.add(move);
     }
+
+    if (x == 0 && y == 0)
+      return true;
 
     return false;
   }
-
 }
