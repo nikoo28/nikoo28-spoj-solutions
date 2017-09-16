@@ -37,7 +37,7 @@ public class ASCIIDistance {
 
     int sum = 0;
     for (Character character : differenceSet) {
-      sum += character;
+      sum += character * histogram[character - 'a'];
     }
 
     return sum;
@@ -46,7 +46,7 @@ public class ASCIIDistance {
   public static void main(String[] args) {
 
     ASCIIDistance asciiDistance = new ASCIIDistance();
-    System.out.println(asciiDistance.distance("at", "cat"));
+    System.out.println(asciiDistance.distance("thought", "sloughs"));
 
   }
 
