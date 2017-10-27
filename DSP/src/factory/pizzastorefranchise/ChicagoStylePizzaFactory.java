@@ -1,11 +1,12 @@
-package factory.pizzastorefranchise.pizza;
+package factory.pizzastorefranchise;
 
 import factory.pizzastorefranchise.PizzaStore;
+import factory.pizzastorefranchise.pizza.*;
 
 /**
  * @author nikoo28 on 10/27/17
  */
-public class ChicagoStylePizzaStore extends PizzaStore {
+public class ChicagoStylePizzaFactory extends PizzaStore {
 
   @Override
   Pizza createPizza(String type) {

@@ -1,15 +1,13 @@
 package factory.pizzastorefranchise;
 
-import factory.pizzastorefranchise.pizza.ChicagoStylePizzaStore;
-import factory.pizzastorefranchise.pizza.NYStylePizzaStore;
 import factory.pizzastorefranchise.pizza.Pizza;
 
 public class PizzaTestDrive {
 
   public static void main(String[] args) {
 
-    PizzaStore nyStore = new NYStylePizzaStore();
-    PizzaStore chicagoStore = new ChicagoStylePizzaStore();
+    PizzaStore nyStore = new NYStylePizzaFactory();
+    PizzaStore chicagoStore = new ChicagoStylePizzaFactory();
 
     Pizza pizza = nyStore.orderPizza("cheese");
     System.out.println("Ethan ordered a " + pizza.getName() + "\n");
