@@ -1,6 +1,6 @@
-package factory.pizzastore;
+package factory.pizzastorebasic;
 
-import factory.pizzastore.pizza.Pizza;
+import factory.pizzastorebasic.pizza.Pizza;
 
 /**
  * @author nikoo28 on 10/27/17

@@ -1,4 +1,4 @@
-package factory.pizzastore.pizza;
+package factory.pizzastorebasic.pizza;
 
 /**
  * @author nikoo28 on 10/27/17
