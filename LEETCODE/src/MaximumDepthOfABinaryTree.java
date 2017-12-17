@@ -16,7 +16,6 @@ public class MaximumDepthOfABinaryTree {
     nodes.add(root);
     int levels = 0;
 
-    boolean flag = false;
     while (!nodes.isEmpty()) {
 
       levels++;
