@@ -5,13 +5,13 @@ public class IslandPerimeter {
 
   public int islandPerimeter(int[][] grid) {
 
-    int rows = grid.length;
-    int cols = grid[0].length;
+    int rows = grid.length + 2;
+    int cols = grid[0].length + 2;
 
     int[][] matrix = new int[rows][cols];
 
-    for (int i = 1; i < rows; i++) {
-      for (int j = 1; j < cols; j++) {
+    for (int i = 1; i < rows - 1; i++) {
+      for (int j = 1; j < cols - 1; j++) {
         matrix[i][j] = grid[i - 1][j - 1];
       }
     }
