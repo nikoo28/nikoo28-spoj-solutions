@@ -14,7 +14,10 @@ public class MoveZeroes {
       }
     }
 
-    for (int i = insertPosition - 1; i < nums.length; i++) {
+    if (insertPosition == 0)
+      return;
+
+    for (int i = insertPosition; i < nums.length; i++) {
       nums[i] = 0;
     }
   }
