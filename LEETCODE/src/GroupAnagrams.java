@@ -17,12 +17,10 @@ public class GroupAnagrams {
       Arrays.sort(arr);
       String key = String.valueOf(arr);
 
-      if (stringAnagramsMap.containsKey(key)) {
-        stringAnagramsMap.get(key).add(s);
-        continue;
-      }
+      if (!stringAnagramsMap.containsKey(key))
+        stringAnagramsMap.put(key, new ArrayList<String>());
 
-      stringAnagramsMap.put(key, new ArrayList<String>());
+      stringAnagramsMap.get(key).add(s);
     }
 
     List<List<String>> resultList = new ArrayList<>();
