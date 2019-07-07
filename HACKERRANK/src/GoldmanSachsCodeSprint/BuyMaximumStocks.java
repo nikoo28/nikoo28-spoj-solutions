@@ -33,9 +33,9 @@ public class BuyMaximumStocks {
     long stocksPurchased = 0;
     long remainingValue = k;
 
-    for (Map.Entry<Integer, Integer> integerIntegerEntry : sortedByStockValueMap.entrySet()) {
-      int stockValue = integerIntegerEntry.getValue();
-      int maxPossibleStock = integerIntegerEntry.getKey();
+    for (Map.Entry<Integer, Integer> stockValueEntry : sortedByStockValueMap.entrySet()) {
+      int stockValue = stockValueEntry.getValue();
+      int maxPossibleStock = stockValueEntry.getKey();
 
       if (stockValue * maxPossibleStock < remainingValue) {
         stocksPurchased += maxPossibleStock;
