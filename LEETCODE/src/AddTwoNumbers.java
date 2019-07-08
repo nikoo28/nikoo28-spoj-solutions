@@ -18,11 +18,8 @@ public class AddTwoNumbers {
     while (l1 != null || l2 != null) {
 
       int x, y;
-      if (l1 == null) x = 0;
-      else x = l1.val;
-
-      if (l2 == null) y = 0;
-      else y = l2.val;
+      x = l1 == null ? 0 : l1.val;
+      y = l2 == null ? 0 : l2.val;
 
       int val = x + y + carry;
       carry = 0;
