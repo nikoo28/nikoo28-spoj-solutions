@@ -1,5 +1,5 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by nikoo28 on 12/18/17 9:29 PM
@@ -9,22 +9,27 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
   public int lengthOfLongestSubstring(String s) {
 
-    int i = 0;
-    int j = 0;
-    Set<Character> charSet = new HashSet<>();
+    if (s == null || s.length() == 0)
+      return 0;
 
-    int length = 0;
+    int maxLen = 1;
 
-    while (j < s.length()) {
-      if (!charSet.contains(s.charAt(j))) {
-        charSet.add(s.charAt(j));
-        j++;
-        length = Math.max(length, charSet.size());
-      } else
-        charSet.remove(s.charAt(i++));
+    List<Character> x = new ArrayList<>();
+    for (int i = 0; i < s.length(); i++) {
+
+      if (x.contains(s.charAt(i))) {
+
+        maxLen = maxLen < x.size() ? x.size() : maxLen;
+
+        while (x.get(0) != s.charAt(i))
+          x.remove(0);
+        x.remove(0);
+      }
+
+      x.add(s.charAt(i));
     }
 
-    return length;
+    return maxLen < x.size() ? x.size() : maxLen;
   }
 
 }
