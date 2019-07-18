@@ -9,7 +9,7 @@ public class GroupAnagrams {
   public List<List<String>> groupAnagrams(String[] strs) {
 
     if (strs == null || strs.length == 0)
-      return new ArrayList<List<String>>();
+      return new ArrayList<>();
 
     Map<String, List<String>> stringAnagramsMap = new HashMap<>();
     for (String s : strs) {
@@ -18,7 +18,7 @@ public class GroupAnagrams {
       String key = String.valueOf(arr);
 
       if (!stringAnagramsMap.containsKey(key))
-        stringAnagramsMap.put(key, new ArrayList<String>());
+        stringAnagramsMap.put(key, new ArrayList<>());
 
       stringAnagramsMap.get(key).add(s);
     }
