@@ -15,12 +15,10 @@ public class BinaryTreeRightSIdeView {
       return new ArrayList<>();
 
     Queue<TreeNode> queue = new LinkedList<>();
-
     List<Integer> result = new ArrayList<>();
 
     queue.add(root);
     queue.add(null);
-    int level = 0;
     while (queue.peek() != null) {
 
       int size = queue.size();
@@ -39,11 +37,9 @@ public class BinaryTreeRightSIdeView {
 
         prev = node;
       }
-      level++;
       result.add(prev.val);
       queue.add(null);
     }
-    System.out.println(level);
     return result;
   }
 
