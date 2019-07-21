@@ -1,3 +1,5 @@
+package hard;
+
 /**
  * Created by nikoo28 on 7/20/19 12:26 AM
  */

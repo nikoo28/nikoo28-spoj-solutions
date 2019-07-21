@@ -1,16 +1,20 @@
+package hard;
+
+import medium.TreeNode;
+
 /**
  * Created by nikoo28 on 7/12/19 3:06 AM
  */
 
-public class Codec {
+public class SerializeAndDeserializeABinaryTree {
 
   // Encodes a tree to a single string.
   public String serialize(TreeNode root) {
 
-    StringBuilder inOrderString = new StringBuilder("");
+    StringBuilder inOrderString = new StringBuilder();
     inOrder(root, inOrderString);
 
-    StringBuilder preOrderString = new StringBuilder("");
+    StringBuilder preOrderString = new StringBuilder();
     preOrder(root, preOrderString);
 
     return inOrderString.toString() + preOrderString.toString();
@@ -49,11 +53,11 @@ public class Codec {
     String rootValAddress = preOrderSplits[0];
     int rootVal = Integer.parseInt(rootValAddress.split(":")[0]);
 
-    StringBuilder inOrderStringLeft = new StringBuilder("");
-    StringBuilder preOrderStringLeft = new StringBuilder("");
+    StringBuilder inOrderStringLeft = new StringBuilder();
+    StringBuilder preOrderStringLeft = new StringBuilder();
 
-    StringBuilder inOrderStringRight = new StringBuilder("");
-    StringBuilder preOrderStringRight = new StringBuilder("");
+    StringBuilder inOrderStringRight = new StringBuilder();
+    StringBuilder preOrderStringRight = new StringBuilder();
 
     boolean left = true;
     int j = 1;
@@ -91,7 +95,7 @@ public class Codec {
 
   public static void main(String[] args) {
 
-    Codec codec = new Codec();
+    SerializeAndDeserializeABinaryTree serializeAndDeserializeABinaryTree = new SerializeAndDeserializeABinaryTree();
 
     TreeNode root = new TreeNode(1);
 
@@ -103,10 +107,10 @@ public class Codec {
     root.right.left = new TreeNode(5);
     root.right.right = new TreeNode(6);
 
-    String data = codec.serialize(root);
+    String data = serializeAndDeserializeABinaryTree.serialize(root);
     System.out.println(data);
 
-    TreeNode deserialized = codec.deserialize(data);
+    TreeNode deserialized = serializeAndDeserializeABinaryTree.deserialize(data);
 
     System.out.println(deserialized);
   }
