@@ -1,3 +1,6 @@
+package easy;
+
+import medium.TreeNode;
 /**
  * Created by nikoo28 on 12/19/17 12:58 AM
  */

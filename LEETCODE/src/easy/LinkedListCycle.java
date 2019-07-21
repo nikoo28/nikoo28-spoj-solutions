@@ -1,5 +1,7 @@
 package easy;
 
+import medium.ListNode;
+
 /**
  * Created by nikoo28 on 2019-07-21 12:55
  */

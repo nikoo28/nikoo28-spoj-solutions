@@ -1,14 +1,14 @@
-package easy;
+package medium;
 
 /**
  * Created by nikoo28 on 12/17/17 10:41 PM
  */
 
 public class ListNode {
-  int val;
-  ListNode next;
+  public int val;
+  public ListNode next;
 
-  ListNode(int x) {
+  public ListNode(int x) {
     val = x;
   }
 }
