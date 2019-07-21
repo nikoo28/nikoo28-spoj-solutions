@@ -1,9 +1,13 @@
+package easy;
+
+import medium.TreeNode;
+
 import java.util.*;
 
 /**
  * @author nikoo28 on 9/17/17
  */
-public class ConvertBSTTOGreaterTree {
+public class ConvertBSTToGreaterTree {
 
   public TreeNode convertBST(TreeNode root) {
 
